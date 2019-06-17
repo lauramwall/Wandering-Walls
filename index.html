@@ -1,75 +1,231 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
  <html lang="en">
 
  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Wandering Walls &#45; Blog</title>
-    <meta name="description" content="Portfolio website for Laura Wall, a Front End Developer, Email Developer, and Graphic Designer residing in Phoenix, Arizona">
-    <meta name="author" content="Laura Wall">
-    <meta name="keywords" content="camper, camping, family, campers, camper trailer, trailer, travel, blog, travel blog">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href=" " type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Skranji&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <style>
-        html {
-            font-family: 'Skranji', cursive;
-        }
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <title>The Wandering Walls &#45; Blog</title>
+     <meta name="description" content="We are The Wandering Walls - follow us on our journey around the United States in our RV">
+     <meta name="author" content="Laura Wall">
+     <meta name="keywords" content="camper, camping, family, campers, camper trailer, trailer, travel, blog, travel blog">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="style.css" type="text/css">
 
-        body,
-        html {
-            height: 100%;
-        }
+     <!-- Bootstrap 4 -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        body {
-            background-image: url(img/trailer-dark.jpg);
-            background-color: #000;
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-        .test-1 {
-            text-align: center;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
+     <!-- Google Adsense -->
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+     <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+             google_ad_client: "ca-pub-8891044351824397",
+             enable_page_level_ads: true
+         });
 
-        .test-2 {
-            top: 40%;
-            position: absolute;
-            text-align: center;
-            width: 100%;
-            /* text-shadow: 0 0 12px black; */
-            color: #fff;
-            font-size: 2rem;
-            line-height: 2.4rem;
-            font-weight: 400;
-        }
+     </script>
+ </head>
 
-        .fa-instagram {
-            color: #fff;
-            margin-top: 1rem;
-        }
-    </style>
-</head>
+ <body>
+     <button class="btn btn-lg" onclick="topFunction()" id="myBtn" title="Go back to top">Back to top <i class="ml-2 fas fa-arrow-up"></i></button>
+     
+     <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-between">
+         <div class="container-fluid">
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
+                 <ul class="navbar-nav">
+                     <li class="nav-item">
+                         <a class="a-link nav-link pl-0 m-2 active" href="#">Home</a>
+                     </li>
+                 </ul>
+             </div>
+             <a href="#" class="navbar-brand mx-auto d-block text-center order-0 order-md-1">The Wandering Walls</a>
+             <div class="navbar-collapse collapse dual-nav w-50 order-2">
+                 <ul class="nav navbar-nav ml-auto">
+                     <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/thewanderingwalls/">Instagram <i class="fab fa-instagram"></i></a></li>
+                 </ul>
+             </div>
+         </div>
+     </nav>
 
-<body>
-    <div class="test-1">
-        <h1 class="test-2">Wandering Walls is coming soon.<br /><a href="https://www.instagram.com/thewanderingwalls/"><i class="fab fa-instagram"></i></a></h1>
-    </div>
+     <!-- Opening div -->
 
-    <h1 style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;">
-        <span style="display:inline-block;padding:2px 3px">
-            <svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32">
-                <title>unsplash-logo</title>
-                <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
-            </svg>
-        </span>
-        <span style="display:inline-block;padding:2px 3px">Isaac Moore</span>
-    </h1>
+     <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-light first-div">
+         <div class="col-md-8 p-lg-5 mx-auto my-5">
+             <h1 class="font-weight-bold" style="margin-top: 3rem; color: #fff; line-height: 1.1;">Full time RVers Jacob and Ayli</h1>
+             <p class="lead" style="color: #fff; line-height: 1.1;">Follow us and our journey on the road</p>
+             <button type="button" class="main-btn" onclick="window.location.href = '#post1';">Skip to first post <i class="ml-2 fas fa-arrow-right"></i></button>
+         </div>
+         <div class="product-device box-shadow d-none d-md-block"></div>
+         <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+     </div>
 
-</body></html>
+     <!-- Blog div -->
+
+     <main role="main" class="container m-5 mx-auto border-bottom">
+         <div class="row">
+             <div class="col-md-8 blog-main">
+                 <h1 id="post2" class="pb-3 mb-1 number-title">2</h1>
+
+                 <div class="blog-post mb-5 border-bottom">
+                     <h2 class="blog-post-title">We Connecti-can&#39;t Wait to Get Out of Ohio</h2>
+                     <p class="blog-post-meta"><i>Written by Jacob Wall</i></p>
+
+                     <p>Ayli and I had our fun on our honeymoon, but once we got back to Ohio the real work began. Ayli was set to start her first assignment as a travel nurse in mid September and this meant that we needed to move out of our current house in Columbus and put all of our crap into storage or the dumpster. Most of our big furniture I set out by the curb and watched in amazement as people would stop by and pick up literally anything, including a well used cat tower and a broken air conditioner. The rest of our belongings made it to the basement of our parent&#39;s houses (for which I am eternally grateful) where we had to decide what was worthy of coming with us on our first three month trip. Ayli and I also stayed in her mother&#39;s basement along with our dog Hagrid, our cats Simba and Tarzan, and our hamster Navi.</p>
+
+                     <p>When it was time to head out to Connecticut we had to load up everything into our two cars, a Honda Civic and a Jeep Liberty. Thank goodness for Ayli&#39;s Jeep... I can&#39;t say I was hauling quite as much in my Civic. I did have both of the cats though, who manage to meow constantly the entire drive.</p>
+
+                     <p>This drive didn&#39;t go perfectly due to road closings and we actually spent the night at a motel about halfway there. This was interesting because while it was pet friendly, they had a max amount of animals you were allowed in the room. So we showed them we had Hagrid and once the coast was clear we snuck two cats and a hamster into the room. We were traveling with a small, furry army.</p>
+
+                     <p>The next day we arrived to our apartment complex in Manchester, Connecticut, which is a town in Hartford County. From our apartment it only took about twenty minutes to reach downtown Hartford. I remember thinking that our complex was so nice since Ayli and I had just moved out of the most rundown house in all of German Village, Columbus. We had our own parking spots and appliances in the house that WORKED?? Must be dreaming!</p>
+
+                     <p>There was also a gym within walking distance, which I loved the convenience of and used almost daily. Plus a tennis court that doubled as a fenced in dog area for Hagrid. The apartment complex did have a dog park but it was the smallest dog park I&#39;ve ever seen and will ever see. I still used it to play ball with Hagrid after walks, but I only saw another dog in it once.</p>
+
+                     <p>Right across the road from where we lived was a Walmart and next door to that was a mall. In fact, nearly every store you could name was within a five minute drive. This was amazing because every now and then I could walk to the store to get groceries if I wanted, or if I were bored the mall was right there. I actually got a job working in the Barnes &nbsp; Noble across the road and I could leave my apartment two minutes before my shift started and still be on time.</p>
+
+                     <p>Ayli was working night shift five nights a week so I guess you could say she spent a lot of the daytime napping. Her and I were on opposite schedules so for most of the days we were in Connecticut it was up to me to entertain myself. I spent a lot of my free time exercising or doing activities with Hagrid. There was a really well kept dog park about fifteen minutes from my apartment that we went to several times a week. I would also explore other local parks, spend time aimlessly walking around the mall, and visit the towns library.</p>
+
+                     <p>Sometimes Ayli had a few days in a row off of work and that&#39;s when we would do some of our cooler trips. We discovered that a bus stop close by would take us to New York City so we went a few times. The first time I went we spent most of the time being classic tourists and visiting places like Central Park, the museums, and Times Square. We also caught up with my cousin Alex and his girlfriend Megan who live there and they showed us around and even hosted us for a night. It&#39;s an entirely different lifestyle to live in New York and I don&#39;t feel like I move quickly enough to make it there. I like my peace and quiet a little too much.</p>
+
+                     <p>The second time I was in New York City was to watch the Cleveland Cavaliers take on the Brooklyn Nets. We were insanely lucky because this was one of the very few games the Cavs won last season. These tickets were a gift from Ayli and I loved it because we sat nearly right behind the Cavaliers bench. It was bizarre to see these players so closely after watching them on TV all the time.</p>
+
+                     <p>Halloween was a great time for Ayli and I because we are both big fans of dressing up and partaking in the festivities. We found two pet costume contests that we entered Hagrid in and he won the first one, which took place at a pet convention. Hagrid made a great doctor, or dogtor, with a tiny lab coat and tie, stethoscope, glasses, and a nametag. The convention was a blast and Hagrid got a ton of attention and we were proud to show him off. He also got to meet other animals like chickens and a tortoise, who he was absolutely terrified of.</p>
+
+                     <p>For Halloween day we thought it would be fitting to travel to Salem, Massachusetts; the site of the Salem witch trials and one of the biggest Halloween party locations around. We went as John Lennon and Yoko Ono and people loved it. I felt like a celebrity with how many photos we took with strangers and how often people would yell out at us. Salem was such a cool place to visit for Halloween because they&#39;ve fully embraced their witch theme, and the streets were packed with visitors in costumes. We even watched a reenactment of one of the witch trials inside of an old town hall. Later in the evening we went on a little costume booze cruise where there was dancing and a costume contest that we didn&#39;t win but very strongly felt like we should have.
+                         Christmas was also spent in Connecticut and it was pretty peaceful in our little apartment. This was the first Christmas for Ayli and myself as a married couple and we sent out a Christmas card from &#39;The Walls&#39;. This card took a shockingly long time to make because of the fact that we had two cats and a dog in the photo and none of them wanted to look at the camera at the same time. Christmas was nice though, with our Goodwill decorations we got for a few dollars, a fire in our fireplace, and tons of gifts for our pets. They are an incredibly spoiled group of animals.</p>
+
+                     <p>This was a pretty quick summary of our three months in Connecticut. It&#39;s interesting that we were just outside of Hartford but only went into the city a handful of times. Overall it wasn&#39;t bad, but Ayli worked so many nights that it felt like we really didn&#39;t get a whole lot of time to spend together. From now on she wants to do three shifts a week that are twelve hours long instead. It&#39;s pretty neat to be able to say that I&#39;ve lived in Connecticut and I&#39;m excited to add more locations to that list. Up next is an assignment in Charlotte, North Carolina... so it&#39;s time to pack up again!</p>
+
+                     <p>A quick little story if you&#39;ve got the time!</p>
+
+                     <p>Ayli&#39;s work covers the housing and the utilities for each place we live, so when we move somewhere we give them the information so they can pay the bills. Apparently the entire time we lived in Connecticut the didn&#39;t pay the electric bill...</p>
+
+                     <p>Ayli had finished a night shift and was in bed napping. I was in the living room on the laptop when suddenly it disconnected from the internet. After trying to reconnect for a while I realized that nothing in our apartment had power. I wasn&#39;t too concerned and I thought the power simply went out and I waited for a short bit for the problem to be fixed.</p>
+
+                     <p>After maybe thirty minutes I went outside and found a maintenance worker in the parking lot. I asked about the electricity and he said that as far as he knew all the apartments still had power. I told him that mine was out and he suggested talking to the front office. I went to the office and told them about my lack of electricity and they told me that I needed to call the power company and figure it out with them. I called and they said they needed my account information, which I did not know so I apologetically woke Ayli up to ask for it.</p>
+
+                     <p>Ayli told me that we didn&#39;t have an account because the bill should be covered by the apartment complex with our corporate housing. I called the electric company back and informed them of this.</p>
+
+                     <p>The electric company could not believe that someone had been living in the apartment for the past three months because they received no money the entire time we were there. I told them that we would fix it and get them the money, but we needed our power back on in the meantime. I was informed that since there was no account and the power was shut off that it would be impossible to have it back on that day.</p>
+
+                     <p>I went back to the apartment office and told them what happened and that they needed to send in our money for electricity. They apologized several times and reassured us that they would fix it. In the meantime we were moved to a different apartment until our power came back on. So I had to grab my pets, food from the fridge, and my wife and we spent a day or two in this other apartment until I saw the electricity was back on at our place. It&#39;s funny because this was only a few days before we left Connecticut and if they had shut off the power just a few days later, nobody would have known that we didn&#39;t pay for power during our time there.</p>
+
+                     <p>Thanks for reading! I&#39;ll be back soon!</p>
+
+                     <p class="handwritten">Jacob</p>
+                 </div><!-- /.blog-post -->
+
+                 <h1 id="post1" class="pb-3 mb-1 number-title">1</h1>
+
+                 <div class="blog-post mb-5">
+                     <h2 class="blog-post-title">The Beginning</h2>
+                     <p class="blog-post-meta"><i>Written by Jacob Wall</i></p>
+
+                     <p>I&#39;m a married man now. This means I need to settle down, purchase a house, and start a family.</p>
+
+                     <p>Or does it mean that I&#39;m supposed to quit my job, buy an RV, and move to a different city every few months?</p>
+
+                     <p>I think I&#39;ll choose option B.</p>
+
+                     <p>It&#39;s very convenient for me that I have a lovely wife who feels the same way and who probably wants to see the world even more than I do. That&#39;s why when Ayli and I got married we both left our jobs in Columbus and she started travel nursing. With travel nursing she has short term assignments in various hospitals around the country. Everybody needs nurses, which means if we want to live in a specific state or city then we can probably find work there. These assignments only last three months unless we wanted to extend our stay, and after three months we pack up our things and move to the next one.</p>
+
+                     <p>The downside of travel nursing? Apparently it&#39;s annoying to pack up all your belongings and find housing in a new state every three months. In addition to this inconvenience it&#39;s also expensive. When you rent an apartment with a short term lease that is also pet friendly and fully furnished the prices shoot sky high. Housing IS covered by the travel nursing agency but it seems like a shame to say goodbye to all of that money when some of it could go back into our pockets.</p>
+
+                     <p>So Ayli and I decided that we were done with apartments and we&#39;d be purchasing an RV to live in full time. We&#39;d drive our comfy little home with us from city to city without having to pack up our belongings and clean for the next tenants. When we choose to be finished with a location we just hook up to the back of our car and go wherever we&#39;d rather be.</p>
+
+                     <p>I want to write about the adventures of Ayli and I as we travel the country in our RV. I&#39;m sure we&#39;ll realize there are a thousand things we don&#39;t know about owning an RV, we&#39;ll probably make numerous mistakes, and no doubt we&#39;ll have some rough days. But I feel like the whole experience is going to be overwhelmingly positive and an adventure we&#39;ll always remember. The RV has been purchased and we are about ready to move in, but before I start talking about that I&#39;d love to share what Ayli and I have been up to since our wedding.</p>
+
+                     <p>We&#39;ve been traveling.</p>
+
+                     <p>It all started with our honeymoon. We had the hardest time choosing where to go but we went with a cruise on the Mediterranean. This cruise had stops in several cities in a few countries along the sea such as Spain, France, and Italy. The ship landed once a day and we&#39;d scramble off to go be tourists in that city until curfew then we&#39;d head back to the ship for evenings of shows, eating, drinking, and dancing. This was exhausting but very, very enjoyable. There were many moments that I don&#39;t believe I&#39;ll forget, such as eating dinner in a fancy restaurant right at sea level late at night. It&#39;s incredible how the waves can look so beautiful and inviting during the daytime but in the dark they look menacing and powerful. I also won&#39;t forget when Ayli and I won a dance competition and received a free bottle of wine, or when the piano player gave us a honeymoon shout out and played a special song just for us, or when we watched the sun set over the mountains and a lighthouse off the coast of France.</p>
+
+                     <p>We were spoiled for that week. Unlimited drinks and food passes are a dangerous thing.</p>
+
+                     <p>In addition to all of that we had the opportunity to explore historic and breathtaking places like Rome, Pompeii, and Vatican City. I could write forever about each of these locations but perhaps I&#39;ll do that another time.</p>
+
+                     <p>But wait, there&#39;s more. After the cruise was over we had a layover in Iceland, so of course we went to the Blue Lagoon to relax in the natural springs for a while. On top of that, before Ayli and I even boarded the cruise ship we actually spent a week in Barcelona because there was a gap between our wedding day and the departure of the ship. The ship left from Barcelona so we thought why not? Let&#39;s stay there until it leaves!</p>
+
+                     <p>Barcelona is absolutely one of the coolest places I&#39;ve ever visited with so much to explore and constantly activities going on. We shopped, ate at tons of new restaurants, got tattoos, danced, visited historic buildings, listened to live music, went to the zoo and beach, hiked, got robbed (wait, what?), and rode bikes around the city. Ayli was absolutely fearless on her bike, weaving through crowds and traffic like she&#39;s done it a million times before. I did my very best to keep up and stay alive.</p>
+
+                     <p>So I guess you could say I enjoyed my honeymoon and I&#39;m very grateful to have Ayli by my side. However, this trip was just the beginning of our adventure together. Since we&#39;ve been married Ayli has actually completed two different travel nursing assignments, one in Connecticut and one in North Carolina. But I think I&#39;ll save talking about those for future entries. For now, thanks for reading and I&#39;ll be back soon!</p>
+
+                     <p class="handwritten">Jacob</p>
+                 </div><!-- /.blog-post -->
+
+             </div><!-- /.blog-main -->
+
+             <aside class="col-md-4 blog-sidebar">
+                 <div class="p-3 mb-3 bg-light rounded">
+                     <h4>About Us</h4>
+                     <p class="mb-0 font-italic">Coming soon!</p>
+                 </div>
+
+                 <div class="p-3">
+                     <h4>Follow Us</h4>
+                     <ol class="list-unstyled">
+                         <li><a href="https://www.instagram.com/thewanderingwalls/">Instagram</a></li>
+                     </ol>
+                 </div>
+             </aside><!-- /.blog-sidebar -->
+
+         </div><!-- /.row -->
+
+     </main>
+
+     <!-- Footer -->
+
+     <footer class="container py-5">
+         <div class="row">
+             <div class="col-12 col-md mb-3">
+                 <a href="#" class="navbar-brand d-block mb-2" style="width: 190px; color: #000;">The Wandering Walls</a>
+                 <p>Follow us and our journey on the road</p>
+                 <small class="d-block mt-5 text-muted">Built by Laura Wall</small>
+             </div>
+             <div class="col-12 col-md">
+                 <h5></h5>
+             </div>
+             <div class="col-12 col-md">
+                 <a class="a-link" href="https://www.instagram.com/thewanderingwalls/">
+                     <p>Visit our Instagram <i class="fas fa-share-square"></i></p>
+                 </a>
+                 <a class="a-link" href="https://www.instagram.com/hagridthebernese/">
+                     <p>Hagrid&#39;s Instagram <i class="fas fa-share-square"></i></p>
+                 </a>
+             </div>
+         </div>
+     </footer>
+
+     <!-- Scripts -->
+
+     <script>
+         // When the user scrolls down 20px from the top of the document, show the button
+         window.onscroll = function() {
+             scrollFunction()
+         };
+
+         function scrollFunction() {
+             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                 document.getElementById("myBtn").style.display = "block";
+             } else {
+                 document.getElementById("myBtn").style.display = "none";
+             }
+         }
+
+         // When the user clicks on the button, scroll to the top of the document
+         function topFunction() {
+             document.body.scrollTop = 0;
+             document.documentElement.scrollTop = 0;
+         }
+
+     </script>
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ </body>
+
+ </html>
