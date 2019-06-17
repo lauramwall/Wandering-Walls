@@ -94,7 +94,7 @@ a {
 .number-title {
     font-weight: 800;
     font-size: 3.5rem;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1px #000;
     color: #FEEEA1;
     text-shadow:
         3px 3px 0 #000,
