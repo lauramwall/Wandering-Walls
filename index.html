@@ -1,5 +1,13 @@
-  <!DOCTYPE html>
+ <!DOCTYPE html>
  <html lang="en">
+
+ <!--
+
+    [:[       Built by        ]:]
+    [:[      Laura Wall      ]:]
+    [:[     www.laura.ga      ]:]
+
+ -->
 
  <head>
      <meta charset="UTF-8">
@@ -30,23 +38,32 @@
 
  <body>
      <button class="btn btn-lg" onclick="topFunction()" id="myBtn" title="Go back to top">Back to top <i class="ml-2 fas fa-arrow-up"></i></button>
-     
+
      <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-between">
          <div class="container-fluid">
              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
-                 <span class="navbar-toggler-icon"></span>
+                 <span class="navbar-toggler-icon"><i class="fas fa-bars m-1" style="font-size: 25px;"></i></span>
              </button>
              <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
                  <ul class="navbar-nav">
-                     <li class="nav-item">
-                         <a class="a-link nav-link pl-0 m-2 active" href="#">Home</a>
+                     <li class="nav-item" style="height: 35px;">
+                         <a class="a-link nav-link pl-0 m-2 active" href="https://www.wanderingwalls.com/">Home</a>
                      </li>
+                     <div class="dropdown">
+                         <button class="btn dropdown-toggle pl-0 m-2" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: transparent;">
+                             <span>Find a blog post</span>
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                             <button class="dropdown-item" type="button" onclick="window.location.href = '#post1';">1. The Beginning</button>
+                             <button class="dropdown-item" type="button" onclick="window.location.href = '#post2';">2. We Connecti-can&#39;t Wait to Get Out of Ohio</button>
+                         </div>
+                     </div>
                  </ul>
              </div>
-             <a href="#" class="navbar-brand mx-auto d-block text-center order-0 order-md-1">The Wandering Walls</a>
+             <a href="https://www.wanderingwalls.com/" class="navbar-brand mx-auto d-block text-center order-0 order-md-1">The Wandering Walls</a>
              <div class="navbar-collapse collapse dual-nav w-50 order-2">
                  <ul class="nav navbar-nav ml-auto">
-                     <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/thewanderingwalls/">Instagram <i class="fab fa-instagram"></i></a></li>
+                     <li class="nav-item"><a class="nav-link m-2" href="https://www.instagram.com/thewanderingwalls/">Instagram <i class="fab fa-instagram"></i></a></li>
                  </ul>
              </div>
          </div>
@@ -57,8 +74,8 @@
      <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-light first-div">
          <div class="col-md-8 p-lg-5 mx-auto my-5">
              <h1 class="font-weight-bold" style="margin-top: 3rem; color: #fff; line-height: 1.1;">Full time RVers Jacob and Ayli</h1>
-             <p class="lead" style="color: #fff; line-height: 1.1;">Follow us and our journey on the road</p>
-             <button type="button" class="main-btn" onclick="window.location.href = '#post1';">Skip to first post <i class="ml-2 fas fa-arrow-right"></i></button>
+             <p class="lead font-italic" style="color: #fff; line-height: 1.1; font-weight: 400;">Follow us and our journey on the road</p>
+             <button type="button" class="main-btn" onclick="window.location.href = '#post1';">Skip to first post <i id="rightArrow" class="ml-2 fas fa-arrow-right"></i></button>
          </div>
          <div class="product-device box-shadow d-none d-md-block"></div>
          <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
@@ -73,7 +90,7 @@
 
                  <div class="blog-post mb-5 border-bottom">
                      <h2 class="blog-post-title">We Connecti-can&#39;t Wait to Get Out of Ohio</h2>
-                     <p class="blog-post-meta"><i>Written by Jacob Wall</i></p>
+                     <p class="blog-post-meta font-italic">Written by Jacob Wall</p>
 
                      <p>Ayli and I had our fun on our honeymoon, but once we got back to Ohio the real work began. Ayli was set to start her first assignment as a travel nurse in mid September and this meant that we needed to move out of our current house in Columbus and put all of our crap into storage or the dumpster. Most of our big furniture I set out by the curb and watched in amazement as people would stop by and pick up literally anything, including a well used cat tower and a broken air conditioner. The rest of our belongings made it to the basement of our parent&#39;s houses (for which I am eternally grateful) where we had to decide what was worthy of coming with us on our first three month trip. Ayli and I also stayed in her mother&#39;s basement along with our dog Hagrid, our cats Simba and Tarzan, and our hamster Navi.</p>
 
@@ -95,8 +112,9 @@
 
                      <p>Halloween was a great time for Ayli and I because we are both big fans of dressing up and partaking in the festivities. We found two pet costume contests that we entered Hagrid in and he won the first one, which took place at a pet convention. Hagrid made a great doctor, or dogtor, with a tiny lab coat and tie, stethoscope, glasses, and a nametag. The convention was a blast and Hagrid got a ton of attention and we were proud to show him off. He also got to meet other animals like chickens and a tortoise, who he was absolutely terrified of.</p>
 
-                     <p>For Halloween day we thought it would be fitting to travel to Salem, Massachusetts; the site of the Salem witch trials and one of the biggest Halloween party locations around. We went as John Lennon and Yoko Ono and people loved it. I felt like a celebrity with how many photos we took with strangers and how often people would yell out at us. Salem was such a cool place to visit for Halloween because they&#39;ve fully embraced their witch theme, and the streets were packed with visitors in costumes. We even watched a reenactment of one of the witch trials inside of an old town hall. Later in the evening we went on a little costume booze cruise where there was dancing and a costume contest that we didn&#39;t win but very strongly felt like we should have.
-                         Christmas was also spent in Connecticut and it was pretty peaceful in our little apartment. This was the first Christmas for Ayli and myself as a married couple and we sent out a Christmas card from &#39;The Walls&#39;. This card took a shockingly long time to make because of the fact that we had two cats and a dog in the photo and none of them wanted to look at the camera at the same time. Christmas was nice though, with our Goodwill decorations we got for a few dollars, a fire in our fireplace, and tons of gifts for our pets. They are an incredibly spoiled group of animals.</p>
+                     <p>For Halloween day we thought it would be fitting to travel to Salem, Massachusetts; the site of the Salem witch trials and one of the biggest Halloween party locations around. We went as John Lennon and Yoko Ono and people loved it. I felt like a celebrity with how many photos we took with strangers and how often people would yell out at us. Salem was such a cool place to visit for Halloween because they&#39;ve fully embraced their witch theme, and the streets were packed with visitors in costumes. We even watched a reenactment of one of the witch trials inside of an old town hall. Later in the evening we went on a little costume booze cruise where there was dancing and a costume contest that we didn&#39;t win but very strongly felt like we should have.</p>
+                     
+                     <p>Christmas was also spent in Connecticut and it was pretty peaceful in our little apartment. This was the first Christmas for Ayli and myself as a married couple and we sent out a Christmas card from &#39;The Walls&#39;. This card took a shockingly long time to make because of the fact that we had two cats and a dog in the photo and none of them wanted to look at the camera at the same time. Christmas was nice though, with our Goodwill decorations we got for a few dollars, a fire in our fireplace, and tons of gifts for our pets. They are an incredibly spoiled group of animals.</p>
 
                      <p>This was a pretty quick summary of our three months in Connecticut. It&#39;s interesting that we were just outside of Hartford but only went into the city a handful of times. Overall it wasn&#39;t bad, but Ayli worked so many nights that it felt like we really didn&#39;t get a whole lot of time to spend together. From now on she wants to do three shifts a week that are twelve hours long instead. It&#39;s pretty neat to be able to say that I&#39;ve lived in Connecticut and I&#39;m excited to add more locations to that list. Up next is an assignment in Charlotte, North Carolina... so it&#39;s time to pack up again!</p>
 
@@ -123,7 +141,7 @@
 
                  <div class="blog-post mb-5">
                      <h2 class="blog-post-title">The Beginning</h2>
-                     <p class="blog-post-meta"><i>Written by Jacob Wall</i></p>
+                     <p class="blog-post-meta font-italic">Written by Jacob Wall</p>
 
                      <p>I&#39;m a married man now. This means I need to settle down, purchase a house, and start a family.</p>
 
@@ -167,7 +185,7 @@
                  <div class="p-3">
                      <h4>Follow Us</h4>
                      <ol class="list-unstyled">
-                         <li><a href="https://www.instagram.com/thewanderingwalls/">Instagram</a></li>
+                         <li><a href="https://www.instagram.com/thewanderingwalls/">Instagram <i class="fas fa-share-square"></i></a></li>
                      </ol>
                  </div>
              </aside><!-- /.blog-sidebar -->
@@ -181,9 +199,9 @@
      <footer class="container py-5">
          <div class="row">
              <div class="col-12 col-md mb-3">
-                 <a href="#" class="navbar-brand d-block mb-2" style="width: 190px; color: #000;">The Wandering Walls</a>
-                 <p>Follow us and our journey on the road</p>
-                 <small class="d-block mt-5 text-muted">Built by Laura Wall</small>
+                 <a href="https://www.wanderingwalls.com/" class="navbar-brand d-block mb-2" style="width: 190px; color: #000;">The Wandering Walls</a>
+                 <p class="font-italic">Follow us and our journey on the road</p>
+                 <small id="builtBy" class="d-block mt-5 text-muted">Built by Laura Wall</small>
              </div>
              <div class="col-12 col-md">
                  <h5></h5>
