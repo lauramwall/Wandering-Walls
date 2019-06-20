@@ -18,7 +18,7 @@ a {
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: none!important;
+    background-image: none !important;
     color: rgba(0, 0, 0, .7);
 }
 
@@ -41,7 +41,7 @@ a {
 }
 
 .dropdown-menu {
-    border: 2px solid #FEEEA1!important;
+    border: 2px solid #FEEEA1 !important;
 }
 
 .dropdown-item {
@@ -50,7 +50,8 @@ a {
     transition: 100ms all ease-in-out;
 }
 
-.dropdown-item:focus, .dropdown-item:hover {
+.dropdown-item:focus,
+.dropdown-item:hover {
     font-weight: 500;
 }
 
@@ -67,10 +68,12 @@ a {
     cursor: pointer;
 }
 
-.main-btn:focus, .main-btn:active, .main-btn:hover {
-    background-color: rgba(254, 238, 161, 0.85)!important;
-    border: 2px solid transparent!important;
-    cursor: pointer!important;
+.main-btn:focus,
+.main-btn:active,
+.main-btn:hover {
+    background-color: rgba(254, 238, 161, 0.85) !important;
+    border: 2px solid transparent !important;
+    cursor: pointer !important;
 }
 
 #rightArrow {
@@ -80,11 +83,13 @@ a {
 }
 
 .main-btn:hover > #rightArrow {
-    margin-left: 20px!important;
+    margin-left: 20px !important;
 }
 
-#myBtn:focus, #myBtn:active, #myBtn:hover {
-    background-color: rgba(254, 238, 161, 0.85)!important;
+#myBtn:focus,
+#myBtn:active,
+#myBtn:hover {
+    background-color: rgba(254, 238, 161, 0.85) !important;
 }
 
 .first-div {
@@ -143,11 +148,31 @@ a {
         1px 1px 0 #000;
 }
 
+.blog-img {
+    max-height: 300px;
+}
+
+.duo-img {
+    margin-left: 3rem;
+}
+
 @media (max-width: 480px) {
     #builtBy {
-        display: none!important;
+        display: none !important;
     }
+
     .dropdown-item {
-        white-space: normal!important;
+        white-space: normal !important;
+    }
+}
+
+@media (max-width: 532px) {
+    .duo-img {
+        margin-left: 0rem !important;
+        margin-top: 2rem !important;
+    }
+    .blog-img {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
     }
 }
