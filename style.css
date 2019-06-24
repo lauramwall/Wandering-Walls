@@ -158,12 +158,6 @@ a {
     margin-left: 3rem;
 }
 
-#rotate-img {
-    -webkit-transform: rotate(180deg)!important;
-        -ms-transform: rotate(180deg)!important;
-            transform: rotate(180deg)!important;
-}
-
 @media (max-width: 480px) {
     #builtBy {
         display: none !important;
