@@ -13,6 +13,32 @@ a {
     transition: 250ms all ease-in-out;
 }
 
+.a-link {
+    -webkit-transition: 250ms all ease-in-out;
+    -o-transition: 250ms all ease-in-out;
+    transition: 250ms all ease-in-out;
+}
+
+.a-link:focus, .a-link:hover, .a-link:active {
+    text-decoration: underline!important;
+    font-weight: 500;
+}
+
+.nav-link {
+    -webkit-transition: 250ms all ease-in-out;
+    -o-transition: 250ms all ease-in-out;
+    transition: 250ms all ease-in-out;
+}
+
+.nav-link:focus, .nav-link:hover, .nav-link:active {
+    text-decoration: underline!important;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000!important;
+}
+
 .navbar-light .navbar-toggler {
     border: none;
 }
@@ -20,6 +46,10 @@ a {
 .navbar-light .navbar-toggler-icon {
     background-image: none !important;
     color: rgba(0, 0, 0, .7);
+}
+
+.modal-dialog {
+    max-width: 600px!important;
 }
 
 #myBtn {
@@ -73,6 +103,25 @@ a {
 .main-btn:hover {
     background-color: rgba(254, 238, 161, 0.85) !important;
     border: 2px solid transparent !important;
+    cursor: pointer !important;
+}
+
+.subscribe-btn {
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 0.9rem 3rem 0.9rem 3rem;
+    -webkit-transition: 250ms all ease-in-out;
+    -o-transition: 250ms all ease-in-out;
+    transition: 250ms all ease-in-out;
+    background-color: #FEEEA1;
+    border: 2px solid #FEEEA1;
+    cursor: pointer;
+}
+
+.subscribe-btn:focus,
+.subscribe-btn:active,
+.subscribe-btn:hover {
+    background-color: rgba(254, 238, 161, 0.85) !important;
     cursor: pointer !important;
 }
 
@@ -151,7 +200,7 @@ a {
 .blog-img {
     width: 100%;
     max-width: 300px;
-    height: auto;  
+    height: auto;
 }
 
 .duo-img {
@@ -168,7 +217,7 @@ a {
     }
 }
 
-@media (max-width: 532px) {
+@media (max-width: 990px) {
     .duo-img {
         margin-left: 0rem !important;
         margin-top: 2rem !important;
@@ -177,4 +226,32 @@ a {
         margin-left: 1rem !important;
         margin-right: 1rem !important;
     }
+}
+
+@media (max-width: 900px) {
+    .tablet-link {
+        padding: 0px!important;
+    }
+}
+
+/* Read More button styling */
+
+.read-link {
+    border: none;
+    text-decoration: underline;
+    background-color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#more1 {
+  display: none;
+}
+
+#more2 {
+  display: none;
+}
+
+#more3 {
+  display: none;
 }
