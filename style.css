@@ -78,11 +78,12 @@ a {
     -webkit-transition: 100ms all ease-in-out;
     -o-transition: 100ms all ease-in-out;
     transition: 100ms all ease-in-out;
+    cursor: pointer;
 }
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .main-btn {
